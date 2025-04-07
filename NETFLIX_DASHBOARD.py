@@ -5,7 +5,7 @@ import seaborn as sns
 from collections import Counter
 
 st.title("🎬 Netflix Data Dashboard")
-st.markdown("Explore what's trending on Netflix!")
+st.markdown("This interactive dashboard is exploring the trends of Netflix content using real data, powered by Python, pandas, and Streamlit.")
 
 # Load your cleaned dataset
 df = pd.read_csv("netflix_titles.csv")
