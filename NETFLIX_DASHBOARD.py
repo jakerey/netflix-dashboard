@@ -9,7 +9,7 @@ st.markdown("Explore what's trending on Netflix!")
 
 # Load your cleaned dataset
 df = pd.read_csv("netflix_titles.csv")
-df['date_added'] = pd.to_datetime(df['date_added'])
+df['date_added'] = pd.to_datetime(df['date_added'].astype(str).str.strip(), errors='coerce')
 df['year_added'] = df['date_added'].dt.year
 
 # Filter by type
